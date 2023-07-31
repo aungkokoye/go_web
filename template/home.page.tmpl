@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+{{template "base" .}}
+
+  {{block "css" .}} {{end}}
+
+ {{define "content"}}
+    <div class="container">
+        <h1> This is home page </h1>
+        <div class="text-primary">
+            Welcome !
+        </div>
+    </div>
+{{end}}
+
+  {{block "js" .}} {{end}}

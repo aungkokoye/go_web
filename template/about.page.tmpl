@@ -1,0 +1,16 @@
+ {{template "base" .}}
+
+ {{block "css" .}} {{end}}
+
+ {{define "content"}}
+ <div class="container">
+    <h1> This is about page !</h1>
+
+    <!-- .StringMap mean looking StirgMap key in all data, index is funtion which looking test key in StirgMap-->
+    <p> {{index .StringMap "test"}} </p>
+</div>
+
+
+{{end}}
+
+{{block "js" .}} {{end}} 
